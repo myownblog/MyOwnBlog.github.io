@@ -5,6 +5,8 @@
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
+    background-color: black;
+
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -17,11 +19,8 @@
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
+    color: #fff;
 
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
 }
 
 .site-nav {
@@ -33,7 +32,7 @@
     }
 
     .page-link {
-        color: $text-color;
+        color: $header-link-color;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the last one
@@ -124,6 +123,7 @@
     float: left;
     margin-bottom: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
+    text-align: center;
 }
 
 .footer-col-1 {
@@ -139,6 +139,15 @@
 .footer-col-3 {
     width: -webkit-calc(45% - (#{$spacing-unit} / 2));
     width:         calc(45% - (#{$spacing-unit} / 2));
+}
+
+.footer-wide {
+    width: -webkit-calc(60% - (#{$spacing-unit} / 2));
+    width:         calc(60% - (#{$spacing-unit} / 2));
+    li {
+        float: left;
+        margin-left: 15%;
+    }
 }
 
 @include media-query($on-laptop) {
@@ -240,3 +249,19 @@
         }
     }
 }
+
+
+/**
+ * About page
+ */
+
+ .about-paragraph {
+    width: 60%;
+    float: left;
+ }
+
+ .social-media-about {
+    list-style: none;
+    float: left;
+    margin-left: 100px;
+ }

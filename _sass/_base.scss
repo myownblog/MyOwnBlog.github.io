@@ -91,15 +91,10 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: $link-blue-color;
     text-decoration: none;
 
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
     &:hover {
-        color: $text-color;
         text-decoration: underline;
     }
 }
@@ -200,7 +195,7 @@ pre {
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+            fill: black;
         }
     }
 }

@@ -4,12 +4,22 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+<p class='about-paragraph'>Hello everyone and welcome to my blog. Let me introduce myself, my name is Damien Cosset. I'm French and I'm currently working on improving my skills as a Front-End Web developper. Outside of trying to break website, I enjoy video games, playing football and reading books. <br>
+This blog was created with Jekyll and is hosted on github.<br>
+Feel free to contact me if you want to chat!
+Here are my contact infos: 
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+</p>
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+<ul class="social-media-about">
+	<h4>My contact infos:</h4>
+  <li class="email-info">
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+  </li>          
+  {% if site.twitter_username %}
+  <li>
+    {% include icon-twitter.html username=site.twitter_username %}
+  </li>
+  {% endif %}
+  
+</ul>
